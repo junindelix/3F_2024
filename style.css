@@ -1,0 +1,35 @@
+
+:root{
+    --cor-de-fundo: #1e1e1e;
+    --verde:#6FFF57;
+    --branco:#FFFFFF;
+    --botao-ativo:#3A375E;
+    --botao-inativo:rgba(58,55,94,0,5);
+    --texto-fundo:rgba(58,55,94,0,3);
+   }
+
+.botao1{
+    color: blue;
+    background-color:black;
+}
+
+.botao2{
+    color: crimson;
+     background-color: mediumslateblue;
+}
+
+.botao3{
+    color: chartreuse;
+    background-color:darkred;
+}
+
+.botao4{
+    color: indigo;
+    background-color: red;
+}
+
+*{
+    background-color: var(--cor-de-fundo);
+}
+
+
