@@ -1,6 +1,6 @@
 
 :root{
-    --cor-de-fundo: #1e1e1e;
+    --cor-de-fundo: #550f46;
     --verde:#6FFF57;
     --branco:#FFFFFF;
     --botao-ativo:#3A375E;
@@ -14,22 +14,33 @@
 }
 
 .botao2{
-    color: crimson;
+    color: rgb(129, 2, 28);
      background-color: mediumslateblue;
 }
 
 .botao3{
-    color: chartreuse;
-    background-color:darkred;
+    color: rgb(110, 206, 15);
+    background-color:rgb(0, 145, 55);
 }
 
 .botao4{
-    color: indigo;
+    color: rgb(44, 2, 73);
     background-color: red;
 }
 
 *{
     background-color: var(--cor-de-fundo);
+    color: var(--branco);
 }
 
+span{
+   color: var(--verde);
 
+}
+
+.conteudo-principal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
