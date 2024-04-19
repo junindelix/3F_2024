@@ -1,6 +1,6 @@
 
 :root{
-    --cor-de-fundo: #550f46;
+    --cor-de-fundo: #24291f;
     --verde:#6FFF57;
     --branco:#FFFFFF;
     --botao-ativo:#3A375E;
@@ -43,4 +43,28 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.titulo-principal{
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+}
+
+.botao1,.botao2,.botao3,.botao4{
+    background-color: var(--botao-inativo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 18px;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+
+
 }
