@@ -68,3 +68,14 @@ span{
 
 
 }
+@media screen and (min-width:700px){
+    .botao1,.botao2,.botao3,.botao4{
+        display: flex;
+    }
+    .botao1,.botao2,.botao3,.botao4:last-child{
+        border-radius: 0 20px 20px 0;
+    }
+    .botao1,.botao2,.botao3,.botao4:first-child{
+        border-radius: 20px 0 0 20px;
+    }
+}
