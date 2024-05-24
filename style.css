@@ -1,50 +1,33 @@
-
 :root{
-    --cor-de-fundo: #24291f;
-    --verde:#6FFF57;
-    --branco:#FFFFFF;
-    --botao-ativo:#3A375E;
-    --botao-inativo:rgba(58,55,94,0,5);
-    --texto-fundo:rgba(58,55,94,0,3);
-   }
-
-.botao1{
-    color: blue;
-    background-color:black;
-}
-
-.botao2{
-    color: rgb(129, 2, 28);
-     background-color: mediumslateblue;
-}
-
-.botao3{
-    color: rgb(110, 206, 15);
-    background-color:rgb(0, 145, 55);
-}
-
-.botao4{
-    color: rgb(44, 2, 73);
-    background-color: red;
+    /* nomedavariável: valor */
+    --cor-de-fundo: #1e1e1e;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A3753;
+    --botao-inativo: rgba(58,55,94,0.5);
+    --texto-fundo: rgba(58,55,94,0.3);
 }
 
 *{
-    background-color: var(--cor-de-fundo);
+    
     color: var(--branco);
+}
+body{
+    background-color: var(--cor-de-fundo);
 }
 
 span{
-   color: var(--verde);
-
+    color: var(--verde);
 }
 
 .conteudo-principal{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .titulo-principal{
@@ -53,8 +36,8 @@ span{
     font-size: 32px;
 }
 
-.botao1,.botao2,.botao3,.botao4{
-    background-color: var(--botao-inativo);
+.botao{
+    background-color: var(--botao-ativo);
     color: white;
     display: flex;
     justify-content: center;
@@ -65,17 +48,40 @@ span{
     border-bottom: 4px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
-
-
 }
-@media screen and (min-width:700px){
-    .botao1,.botao2,.botao3,.botao4{
+
+.botoes{
+    display: block;
+}
+
+.botao:first-child{
+    border-radius: 20px 20px 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 0 20px 20px;
+}
+
+.ativo{
+    background-color: var (--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+.aba-conteudo{
+    background-color: var(--texto-fundo);
+    display: none;
+}
+.aba-conteudo,.ativo{
+    display: flex;
+}
+
+@media screen and (min-width: 700px){
+    .botoes{
         display: flex;
     }
-    .botao1,.botao2,.botao3,.botao4:last-child{
+    .botao:last-child{
         border-radius: 0 20px 20px 0;
     }
-    .botao1,.botao2,.botao3,.botao4:first-child{
+    .botao:first-child{
         border-radius: 20px 0 0 20px;
     }
 }
