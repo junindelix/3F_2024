@@ -37,7 +37,7 @@ span{
 }
 
 .botao{
-    background-color: var(--botao-ativo);
+    background-color: var(--botao-inativo);
     color: white;
     display: flex;
     justify-content: center;
@@ -48,6 +48,20 @@ span{
     border-bottom: 4px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
+}
+
+.aba-conteudo{
+    background-color: var(--texto-fundo);
+    display: none;
+}
+
+.aba-conteudo,.ativo{
+    display: flex;
+}
+
+.ativo{
+    background-color: var (--botao-ativo);
+    border-bottom: 4px solid var(--verde);
 }
 
 .botoes{
@@ -62,17 +76,9 @@ span{
     border-radius: 0 0 20px 20px;
 }
 
-.ativo{
-    background-color: var (--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
-.aba-conteudo{
-    background-color: var(--texto-fundo);
-    display: none;
-}
-.aba-conteudo,.ativo{
-    display: flex;
-}
+
+
+
 
 @media screen and (min-width: 700px){
     .botoes{
