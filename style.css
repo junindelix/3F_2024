@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
 :root{
-    /* nomedavariável: valor */
     --cor-de-fundo: #1e1e1e;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A3753;
-    --botao-inativo: rgba(58,55,94,0.5);
+    --verde: #6fff57;
+    --branco: #ffffff;
+    --botao-ativo: #3a375e;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
     --texto-fundo: rgba(58,55,94,0.3);
+
 }
 
 *{
-    
     color: var(--branco);
 }
+
 body{
     background-color: var(--cor-de-fundo);
+    font-family: 'Chakra Patch', sans-serif;
 }
 
 span{
@@ -23,10 +28,10 @@ span{
 .conteudo-principal{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    justify-content: center; /*colunas*/
+    align-items:  center; /*linhas*/
+    width: 100%; /*Configura 100% da página*/
+    max-width: 1300px;/*(Define o tamanho máx da página como 1200px) MODELO DO PROFESSOR (o meu para ficar centralizado tem que ser 1300*/
     margin: 0 auto;
 }
 
@@ -37,57 +42,57 @@ span{
 }
 
 .botao{
-    background-color: var(--botao-inativo);
-    color: white;
+    background: var(--botao-inativo);
+    color: white;/*Cor da fonte*/
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 1em;
-    font-size: 18px;
+    align-items: center;/*definem a forma de exibição*/
+    padding: 1em;/*Afastamento interno*/
+    font-size: 18px;/* Muda o tamanho da fonte*/
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
+    border-left: 2px solid  var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
+    
+}
+
+.botao.ativo{
+    background-color: var(--texto-fundo);
+    border-bottom: 4px solid var(--verde);
 }
 
 .aba-conteudo{
     background-color: var(--texto-fundo);
     display: none;
 }
-
-.aba-conteudo,.ativo{
-    display: flex;
-}
-
-.ativo{
-    background-color: var (--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
-
-.botoes{
+.aba-conteudo.ativo{
     display: block;
 }
-
-.botao:first-child{
-    border-radius: 20px 20px 0 0;
+.abas-textos{
+    background-color: var(--botao-inativo);
+    padding: 40px;
+    border-radius: 15px;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
 }
 
-.botao:last-child{
-    border-radius: 0 0 20px 20px;
-}
-
-
-
-
-
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
     .botoes{
         display: flex;
     }
-    .botao:last-child{
-        border-radius: 0 20px 20px 0;
-    }
+
     .botao:first-child{
         border-radius: 20px 0 0 20px;
+    
+    }
+    .botao:last-child{
+        border-radius: 0 20px 20px 0;
     }
 }
