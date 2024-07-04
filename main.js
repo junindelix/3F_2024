@@ -8,6 +8,10 @@ const tempoObjetivo3= new Date(2025,3,10,10,30)
 const tempoObjetivo4= new Date(2024,10,5,17,20)
 
 function calculaTempo(tempoObjetivo){
+    const agora = newDate()
+    let segundos
+    let minutos
+    let horas
     let dias
     segundos = (tempoObjetivo - agora)/1000
     minutos = segundos/60
@@ -21,11 +25,13 @@ function calculaTempo(tempoObjetivo){
     segundos = segundos%60
     minutos = minutos%60
     horas = horas%24
-
+    return(dias,horas,minutos,segundos)
 
 }
-
-
+let contadorPrimeiro = calculaTempo(tempoObjetivo1)
+contador[0].textContent = `Faltam ${contadorPrimeiro[0]} dias, ${contadorPrimeiro[1]} horas, ${contadorPrimeiro[2]} minutos, ${contadorPrimeiro[3]} segundos`
+let contadorSegundo = calculaTempo(tempoObjetivo2)
+contador[1].textContent = `Faltam ${contadorSegundo[0]} dias, ${contadorSegundo[1]} horas, ${(contadorSegundo[2]) minutos, $(contadorSegundo[3] segundos `
 
 contador[0].textContent = `faltam ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`
 
