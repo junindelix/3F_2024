@@ -8,7 +8,7 @@ const tempoObjetivo3= new Date(2025,3,10,10,30)
 const tempoObjetivo4= new Date(2024,10,5,17,20)
 
 function calculaTempo(tempoObjetivo){
-    const agora = newDate()
+    const agora = new Date()
     let segundos
     let minutos
     let horas
@@ -25,15 +25,18 @@ function calculaTempo(tempoObjetivo){
     segundos = segundos%60
     minutos = minutos%60
     horas = horas%24
-    return(dias,horas,minutos,segundos)
+    return [dias,horas,minutos,segundos]
 
 }
 let contadorPrimeiro = calculaTempo(tempoObjetivo1)
 contador[0].textContent = `Faltam ${contadorPrimeiro[0]} dias, ${contadorPrimeiro[1]} horas, ${contadorPrimeiro[2]} minutos, ${contadorPrimeiro[3]} segundos`
 let contadorSegundo = calculaTempo(tempoObjetivo2)
-contador[1].textContent = `Faltam ${contadorSegundo[0]} dias, ${contadorSegundo[1]} horas, ${(contadorSegundo[2]) minutos, $(contadorSegundo[3] segundos `
+contador[1].textContent = `Faltam ${contadorSegundo[1]} dias, ${contadorSegundo[1]} horas, ${contadorSegundo[1]} minutos, ${contadorSegundo[1]} segundos `
+let contadorTerceiro = calculaTempo(tempoObjetivo3)
+contador[2].textContent = `Faltam ${contadorTerceiro[2]} dias, ${contadorTerceiro[2]} horas, ${contadorTerceiro[2]} minutos, ${contadorTerceiro[3]} segundos`
+let contadorQuarto = calculaTempo(tempoObjetivo4)
+contador [3].textContent = `Faltam ${contadorQuarto[3]} dias, ${contadorQuarto[3]} horas, ${contadorQuarto[3]} minutos, ${contadorQuarto[3]} segundos `
 
-contador[0].textContent = `faltam ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`
 
 for(let i = 0 ; i < botoes.length; i++){
     botoes[i].onclick = function(){
