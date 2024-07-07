@@ -2,10 +2,10 @@ const botoes = document.querySelectorAll(".botao");
 const conteudo = document.querySelectorAll(".aba-conteudo");
 const contador = document.querySelectorAll(".contador");
 
-const tempoObjetivo1= new Date(2027,5,9,17,49)
+const tempoObjetivo1= new Date(2024,7,9,10,23)
 const tempoObjetivo2= new Date(2027,10,18,14,29)
 const tempoObjetivo3= new Date(2025,3,10,10,30)
-const tempoObjetivo4= new Date(2024,10,5,17,20)
+const tempoObjetivo4= new Date(2024,17,8,22,10)
 
 function calculaTempo(tempoObjetivo){
     const agora = new Date()
@@ -31,11 +31,11 @@ function calculaTempo(tempoObjetivo){
 let contadorPrimeiro = calculaTempo(tempoObjetivo1)
 contador[0].textContent = `Faltam ${contadorPrimeiro[0]} dias, ${contadorPrimeiro[1]} horas, ${contadorPrimeiro[2]} minutos, ${contadorPrimeiro[3]} segundos`
 let contadorSegundo = calculaTempo(tempoObjetivo2)
-contador[1].textContent = `Faltam ${contadorSegundo[1]} dias, ${contadorSegundo[1]} horas, ${contadorSegundo[1]} minutos, ${contadorSegundo[1]} segundos `
+contador[1].textContent = `Faltam ${contadorSegundo[1]} dias, ${contadorSegundo[2]} horas, ${contadorSegundo[3]} minutos, ${contadorSegundo[2]} segundos `
 let contadorTerceiro = calculaTempo(tempoObjetivo3)
-contador[2].textContent = `Faltam ${contadorTerceiro[2]} dias, ${contadorTerceiro[2]} horas, ${contadorTerceiro[2]} minutos, ${contadorTerceiro[3]} segundos`
+contador[2].textContent = `Faltam ${contadorTerceiro[1]} dias, ${contadorTerceiro[3]} horas, ${contadorTerceiro[2]} minutos, ${contadorTerceiro[1]} segundos`
 let contadorQuarto = calculaTempo(tempoObjetivo4)
-contador [3].textContent = `Faltam ${contadorQuarto[3]} dias, ${contadorQuarto[3]} horas, ${contadorQuarto[3]} minutos, ${contadorQuarto[3]} segundos `
+contador [3].textContent = `Faltam ${contadorQuarto[3]} dias, ${contadorQuarto[1]} horas, ${contadorQuarto[3]} minutos, ${contadorQuarto[2]} segundos `
 
 
 for(let i = 0 ; i < botoes.length; i++){
@@ -48,4 +48,5 @@ for(let i = 0 ; i < botoes.length; i++){
      conteudo[i].classList.add("ativo")
     }
 }
+
 
