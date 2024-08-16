@@ -46,6 +46,7 @@ span{
 .contador-digito-numero{
     font: size 80px;
     margin: 0;
+
 }
 .contador-digito-texto{
     color: var (--verde);
