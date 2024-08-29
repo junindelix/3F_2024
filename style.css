@@ -44,8 +44,9 @@ span{
 
 }
 .contador-digito-numero{
-    font: size 80px;
+    font-size: 88px;
     margin: 0;
+    padding: 0 10px;
 
 }
 .contador-digito-texto{
