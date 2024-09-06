@@ -18,7 +18,7 @@
 
 body{
     background-color: var(--cor-de-fundo);
-    font-family: 'Chakra Patch', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 span{
@@ -82,7 +82,7 @@ span{
 }
 
 .aba-conteudo{
-    background-color: var(--texto-fundo);
+   
     display: none;
 }
 .aba-conteudo.ativo{
